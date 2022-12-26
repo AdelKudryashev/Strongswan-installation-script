@@ -1,8 +1,8 @@
 This script is designed to automatically install the Strongswan daemon. Use Ubuntu 20.04. On it this script is tested and works well.
 
 <h2>Installation.</h2>
-Before running the script, find out your network interface. Use command
-<strong>ip route show default</strong>
+Before running the script, find out your network interface. Use command </br>
+<strong>ip route show default</strong></br>
 to find out your network interface.
 After applying the command, you will see output like
 <font color="red">Output
