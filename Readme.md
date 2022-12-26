@@ -2,27 +2,29 @@ This script is designed to automatically install the Strongswan daemon. Use Ubun
 
 <h2>Installation.</h2>
 Before running the script, find out your network interface. Use command
-<font color="red">ip route show default</font>
+</br><strong>ip route show default</strong></br>
 to find out your network interface.
 After applying the command, you will see output like
-<font color="red">Output
-default via your_server_ip dev ens3 proto static</font>. After <font color="red">dev</font> there will be the required interfaces, in this case it is <font color="red">ens3</font>. Insert your interface in the script, use the search for this.
+</br><strong>Output</br>
+default via your_server_ip dev ens3 proto static</strong>. After <strong>dev</strong> there will be the required interfaces, in this case it is <strong>ens3</strong>. Insert your interface in the script, use the search for this.
 
-Use the command <font color="red">sh startshan.sh</font> to run the script
+Use the command <strong>sh startshan.sh</strong> to run the script
 
-At the end of the script installation, you will need to confirm the inclusion of the ufw firewall twice. just press <font color="red">y</font> and <font color="red">Enter</font>.
+At the end of the script installation, the question will appear twice <strong>Command may disrupt existing ssh connections. Proceed with operation (y|n)?</strong>.
+
+At the end of the script installation, you will need to confirm the inclusion of the ufw firewall twice. Just press <strong>y</strong> and <strong>Enter</strong>.
 
 <h2>Usage.</h2>
 You will need to add a username and password.
-Edit the sudo <font color="red">/etc/ipsec.secrets</font> file. Inside the file there is a template for how to add a new user.
-After saving the file, restart Strongswan using the command.
-sudo systemctl restart strongswan-starter
+Edit the <strong>/etc/ipsec.secrets</strong> file. Inside the file there is a template for how to add a new user.
+After saving the file, restart Strongswan using the command
+</br><strong>sudo systemctl restart strongswan-starter</strong></br>
 
 You can get a certificate with the help of the command
-<font color="red">cat /etc/ipsec.d/cacerts/ca-cert.pem</font>
+</br><strong>cat /etc/ipsec.d/cacerts/ca-cert.pem</strong></br>
 Keep the text between
-<font color="red">-----BEGIN CERTIFICATE----- and -----END CERTIFICATE-----</font>
-to the local computer including these two lines in a <font color="red">.pem</font> file
+</br><strong>-----BEGIN CERTIFICATE----- and -----END CERTIFICATE-----</strong></br>
+to the local computer including these two lines in a <strong>.pem</strong>file
 
 
 
@@ -31,23 +33,23 @@ to the local computer including these two lines in a <font color="red">.pem</fon
 
 <h2>Установка.</h2>
 Перед запуском скрипта узнайте свой сетевой интерфейс. Используйте команду 
-<font color="red">ip route show default</font> чтобы узнать свой сетевой интерфейс.
+</br><strong>ip route show default</strong></br> чтобы узнать свой сетевой интерфейс.
 После применения команды вы увидите вывод вида
-<font color="red">Output
-default via your_server_ip dev ens3  proto static</font>. После <font color="red">dev</font> будет нужный интерфейы, в данном случае это <font color="red">ens3</font>. Вставьте в скрипте ваш интерфейс, используйте поиск для этого.
+</br><strong>Output</br>
+default via your_server_ip dev ens3  proto static</strong>. После <strong>dev</strong> будет нужный интерфейc, в данном случае это <strong>ens3</strong>. Вставьте в скрипте ваш интерфейс, используйте поиск для этого.
 
-Используйте команду <font color="red">sh startshan.sh</font>  для запуска скрипта.
+Используйте команду <strong>sh startshan.sh</strong> для запуска скрипта.
 
-В конце установки скрипта два раза нужно будет подтвердить включение брандмауэра ufw. просто нажмите <font color="red">y</font> и <font color="red">Enter</font>.
+В конце установки скрипта два раза появится вопрос <strong>Command may disrupt existing ssh connections. Proceed with operation (y|n)?</strong>. Нужно будет подтвердить включение брандмауэра ufw. просто нажмите <strong>y</strong> и <strong>Enter</strong>.
 
 <h2>Использование.</h2>
 Вам нужно будет добавить логин и пароль пользователя.
-Отредактируйте файл <font color="red">sudo /etc/ipsec.secrets</font>. Внутри файла есть шаблон как добавлять нового пользователя.
-После сохранения файла перезагрузите Strongswan используя команду.
-<font color="red">sudo systemctl restart strongswan-starter</font>
+Отредактируйте файл <strong>/etc/ipsec.secrets</strong>. Внутри файла есть шаблон как добавлять нового пользователя.
+После сохранения файла перезагрузите Strongswan используя команду
+</br><strong>sudo systemctl restart strongswan-starter</strong></br>/
 
 Получить сертефикат можно с помошью команды
-<font color="red">cat /etc/ipsec.d/cacerts/ca-cert.pem</font>
+</br><strong>cat /etc/ipsec.d/cacerts/ca-cert.pem</strong></br>
 Сохраните текст, заключенный между
-<font color="red">-----BEGIN CERTIFICATE-----</font> и <font color="red">-----END CERTIFICATE-----</font>
-на локальный компьютер включая эти две строки в файл с расширением <font color="red">.pem</font>
+</br><strong>-----BEGIN CERTIFICATE-----</strong> и <strong>-----END CERTIFICATE-----</strong></br>
+на локальный компьютер включая эти две строки в файл с расширением <strong>.pem</strong>
