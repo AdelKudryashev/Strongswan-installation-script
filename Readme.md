@@ -12,7 +12,7 @@ Use the command <font color="red">sh startshan.sh</font> to run the script
 
 At the end of the script installation, you will need to confirm the inclusion of the ufw firewall twice. just press <font color="red">y</font> and <font color="red">Enter</font>.
 
-</h2>Usage.</h2>
+<h2>Usage.</h2>
 You will need to add a username and password.
 Edit the sudo <font color="red">/etc/ipsec.secrets</font> file. Inside the file there is a template for how to add a new user.
 After saving the file, restart Strongswan using the command.
