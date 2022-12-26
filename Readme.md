@@ -2,7 +2,7 @@ This script is designed to automatically install the Strongswan daemon. Use Ubun
 
 <h2>Installation.</h2>
 Before running the script, find out your network interface. Use command
-<font color="red">ip route show default</font>
+</strong>ip route show default<strong>
 to find out your network interface.
 After applying the command, you will see output like
 <font color="red">Output
