@@ -34,7 +34,7 @@ to the local computer including these two lines in a <font color="red">.pem</fon
 <font color="red">ip route show default</font> чтобы узнать свой сетевой интерфейс.
 После применения команды вы увидите вывод вида
 <font color="red">Output
-default via your_server_ip dev ens3  proto static</font>. После <font color="red">dev</font> будет нужный интерфейы, в данном случае это <font color="red">ens3</font>. Вставьте в скрипте ваш интерфейс, используйте поиск для этого.
+default via your_server_ip dev ens3  proto static</font>. После <font color="red">dev</font> будет нужный интерфейc, в данном случае это <font color="red">ens3</font>. Вставьте в скрипте ваш интерфейс, используйте поиск для этого.
 
 Используйте команду <font color="red">sh startshan.sh</font>  для запуска скрипта.
 
