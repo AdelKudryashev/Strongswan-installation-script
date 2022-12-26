@@ -26,8 +26,9 @@ Keep the text between
 </br><strong>-----BEGIN CERTIFICATE----- and -----END CERTIFICATE-----</strong></br>
 to the local computer including these two lines in a <strong>.pem</strong>file
 
-
-
+</br>
+</br>
+</br>
 
 Этот скрипт предназначен для автоматической установки демона Strongswan. Используйте Ubuntu 20.04, на ней этото скипт протестирован и работает хорошо.
 
