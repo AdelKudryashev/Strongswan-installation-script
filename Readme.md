@@ -48,7 +48,7 @@ default via your_server_ip dev ens3  proto static**. После **dev** буде
 Вам нужно будет добавить логин и пароль пользователя.
 Отредактируйте файл **/etc/ipsec.secrets**. Внутри файла есть шаблон как добавлять нового пользователя.
 После сохранения файла перезагрузите Strongswan используя команду
-</br>**sudo systemctl restart strongswan-starter**</br>/
+</br>**sudo systemctl restart strongswan-starter**</br>
 
 Получить сертефикат можно с помошью команды
 </br>**cat /etc/ipsec.d/cacerts/ca-cert.pem**</br>
