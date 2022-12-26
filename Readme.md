@@ -37,7 +37,6 @@ to the local computer including these two lines in a <strong>.pem</strong>file
 После применения команды вы увидите вывод вида
 </br><strong>Output</br>
 default via your_server_ip dev ens3  proto static</strong>. После <strong>dev</strong> будет нужный интерфейc, в данном случае это <strong>ens3</strong>. Вставьте в скрипте ваш интерфейс, используйте поиск для этого.
-
 Используйте команду <strong>sh startshan.sh</strong> для запуска скрипта.
 
 В конце установки скрипта два раза появится вопрос <strong>Command may disrupt existing ssh connections. Proceed with operation (y|n)?</strong>. Нужно будет подтвердить включение брандмауэра ufw. просто нажмите <strong>y</strong> и <strong>Enter</strong>.
@@ -53,3 +52,4 @@ default via your_server_ip dev ens3  proto static</strong>. После <strong>d
 Сохраните текст, заключенный между
 </br><strong>-----BEGIN CERTIFICATE-----</strong> и <strong>-----END CERTIFICATE-----</strong></br>
 на локальный компьютер включая эти две строки в файл с расширением <strong>.pem</strong>
+
