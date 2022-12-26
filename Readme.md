@@ -8,11 +8,9 @@ After applying the command, you will see output like
 </br><strong>Output</br>
 default via your_server_ip dev ens3 proto static</strong>. After <strong>dev</strong> there will be the required interfaces, in this case it is <strong>ens3</strong>. Insert your interface in the script, use the search for this.
 
-Use the command <strong>sh startshan.sh</strong> to run the script
+Use the command <strong>sh startswan.sh</strong> to run the script
 
-At the end of the script installation, the question will appear twice <strong>Command may disrupt existing ssh connections. Proceed with operation (y|n)?</strong>.
-
-At the end of the script installation, you will need to confirm the inclusion of the ufw firewall twice. Just press <strong>y</strong> and <strong>Enter</strong>.
+At the end of the script installation, the question will appear twice <strong>Command may disrupt existing ssh connections. Proceed with operation (y|n)?</strong>. This will enable the firewall ufw. Just press <strong>y</strong> and <strong>Enter</strong>.
 
 <h2>Usage.</h2>
 You will need to add a username and password.
@@ -22,9 +20,9 @@ After saving the file, restart Strongswan using the command
 
 You can get a certificate with the help of the command
 </br><strong>cat /etc/ipsec.d/cacerts/ca-cert.pem</strong></br>
-Keep the text between
+Save the text between
 </br><strong>-----BEGIN CERTIFICATE----- and -----END CERTIFICATE-----</strong></br>
-to the local computer including these two lines in a <strong>.pem</strong>file
+to the local computer including these two lines in a <strong>.pem</strong> file
 
 </br>
 </br>
@@ -38,9 +36,9 @@ to the local computer including these two lines in a <strong>.pem</strong>file
 После применения команды вы увидите вывод вида
 </br><strong>Output</br>
 default via your_server_ip dev ens3  proto static</strong>. После <strong>dev</strong> будет нужный интерфейc, в данном случае это <strong>ens3</strong>. Вставьте в скрипте ваш интерфейс, используйте поиск для этого.
-Используйте команду <strong>sh startshan.sh</strong> для запуска скрипта.
+Используйте команду <strong>sh startswan.sh</strong> для запуска скрипта.
 
-В конце установки скрипта два раза появится вопрос <strong>Command may disrupt existing ssh connections. Proceed with operation (y|n)?</strong>. Нужно будет подтвердить включение брандмауэра ufw. просто нажмите <strong>y</strong> и <strong>Enter</strong>.
+В конце установки скрипта два раза появится вопрос <strong>Command may disrupt existing ssh connections. Proceed with operation (y|n)?</strong>. Это включит брандмауэр ufw. просто нажмите <strong>y</strong> и <strong>Enter</strong>.
 
 <h2>Использование.</h2>
 Вам нужно будет добавить логин и пароль пользователя.
