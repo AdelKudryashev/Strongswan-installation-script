@@ -9,20 +9,15 @@ ip route show default
 to find out your network interface.
 After applying the command, you will see output like
 ```Output</br>
-default via your_server_ip dev ens3 proto static
+default via your_server_ip dev eth0 proto static
 ```
-After **dev** there will be the required interfaces, in this case it is **ens3**. Insert your interface in the script, use the search for this. Replace all ens3 in the script with your network interface.
+After **dev** there will be the required interfaces, in this case it is **eth0**. Insert your interface in the script, use the search for this. Replace all eth0 in the script with your network interface.
 
 To run the script use this command
 ```
-sh startswan.sh
+yes | sh startswan.sh
 ```
 
-At the end of the script installation, the question will appear twice
-```
-Command may disrupt existing ssh connections. Proceed with operation (y|n)?
-```
-This will enable the firewall ufw. Just press **y** and **Enter**.
 
 ## Usage.
 
@@ -60,20 +55,14 @@ ip route show default
 После применения команды вы увидите вывод вида
 ```
 Output
-default via your_server_ip dev ens3  proto static
+default via your_server_ip dev eth0  proto static
 ```
-После **dev** будет нужный интерфейc, в данном случае это **ens3**. Вставьте в скрипте ваш интерфейс, используйте поиск для этого. Замените в скрипте все ens3 на ваш сетевой интерфейс.
+После **dev** будет нужный интерфейc, в данном случае это **eth0**. Вставьте в скрипте ваш интерфейс, используйте поиск для этого. Замените в скрипте все eth0 на ваш сетевой интерфейс.
 Для запуска скрипта используйте команду
 ```
-sh startswan.sh
+yes | sh startswan.sh
 ```
 
-
-В конце установки скрипта два раза появится вопрос
-```
-Command may disrupt existing ssh connections. Proceed with operation (y|n)?
-```
-Это включит брандмауэр ufw. просто нажмите **y** и **Enter**.
 
 ## Использование.
 
