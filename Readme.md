@@ -15,7 +15,7 @@ After **dev** there will be the required interfaces, in this case it is **eth0**
 
 To run the script use this command
 ```
-yes | sh startswan.sh
+yes | sudo sh startswan.sh
 ```
 
 
@@ -60,7 +60,7 @@ default via your_server_ip dev eth0  proto static
 После **dev** будет нужный интерфейc, в данном случае это **eth0**. Вставьте в скрипте ваш интерфейс, используйте поиск для этого. Замените в скрипте все eth0 на ваш сетевой интерфейс.
 Для запуска скрипта используйте команду
 ```
-yes | sh startswan.sh
+yes | sudo sh startswan.sh
 ```
 
 
